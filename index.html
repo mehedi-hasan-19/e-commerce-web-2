@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MEHEDI STORE - Discover quality products across fashion, electronics, beauty and home living.">
+    <title>MEHEDI STORE | Premium Online Shopping</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement">
+        <p>Free Shipping on Orders Over ৳2,000 <span> | </span> Premium Quality Products</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <a href="#home" class="logo" data-page="home">
+                MEHEDI<span>STORE.</span>
+            </a>
+
+            <form class="search-box" id="searchForm">
+                <input type="search" id="searchInput" placeholder="Search products, brands..." aria-label="Search products">
+                <button type="submit" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="header-actions">
+                <button class="header-action" data-page="account" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </button>
+
+                <button class="header-action" data-page="wishlist" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Wishlist</span>
+                    <b class="count-badge" id="wishlistCount">0</b>
+                </button>
+
+                <button class="header-action cart-header" data-page="cart" aria-label="Shopping cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Cart</span>
+                    <b class="count-badge" id="cartCount">0</b>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-inner">
+            <button class="nav-link active" data-page="home">Home</button>
+            <button class="nav-link" data-page="shop">Shop All</button>
+            <button class="nav-link" data-category="Fashion">Fashion</button>
+            <button class="nav-link" data-category="Electronics">Electronics</button>
+            <button class="nav-link" data-category="Beauty">Beauty</button>
+            <button class="nav-link" data-category="Home">Home & Living</button>
+            <button class="nav-link" data-page="about">About Us</button>
+            <button class="nav-link" data-page="admin">Admin</button>
+            <button class="nav-link" data-page="contact">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Main Application -->
+    <main id="app">
+
+        <!-- HOME PAGE -->
+        <section class="page active" id="page-home">
+
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="eyebrow">WELCOME TO MEHEDI STORE</span>
+                    <h1>Discover Your<br><em>Everyday Luxury.</em></h1>
+                    <p>Explore thoughtfully selected products that bring quality, style and convenience into your everyday life.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-gold" data-page="shop">Shop Collection <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn btn-outline" data-page="about">Discover More</button>
+                    </div>
+                    <div class="hero-trust">
+                        <span><i class="fa-solid fa-check-circle"></i> Quality Products</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Secure Shopping</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200" alt="Premium shopping collection">
+                    <div class="hero-image-label">
+                        <small>THE NEW COLLECTION</small>
+                        <strong>Style Meets Quality</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits -->
+            <section class="benefits container">
+                <div class="benefit">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div><h4>Fast Delivery</h4><p>Convenient delivery service</p></div>
+                </div>
+                <div class="benefit">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div><h4>Secure Shopping</h4><p>Your information matters</p></div>
+                </div>
+                <div class="benefit">
+                    <i class="fa-solid fa-medal"></i>
+                    <div><h4>Quality Products</h4><p>Selected with care</p></div>
+                </div>
+                <div class="benefit">
+                    <i class="fa-solid fa-headset"></i>
+                    <div><h4>Customer Support</h4><p>We're here to help</p></div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="section container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">EXPLORE OUR STORE</span>
+                        <h2>Shop by Category</h2>
+                    </div>
+                    <button class="text-link" data-page="shop">View All <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="category-grid">
+                    <button class="category-card" data-category="Fashion">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Fashion">
+                        <span>Fashion</span>
+                        <small>Explore Collection</small>
+                    </button>
+                    <button class="category-card" data-category="Electronics">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600" alt="Electronics">
+                        <span>Electronics</span>
+                        <small>Explore Collection</small>
+                    </button>
+                    <button class="category-card" data-category="Beauty">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600" alt="Beauty">
+                        <span>Beauty</span>
+                        <small>Explore Collection</small>
+                    </button>
+                    <button class="category-card" data-category="Home">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600" alt="Home and Living">
+                        <span>Home & Living</span>
+                        <small>Explore Collection</small>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Featured -->
+            <section class="section section-soft">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">HANDPICKED FOR YOU</span>
+                            <h2>Featured Products</h2>
+                        </div>
+                        <button class="text-link" data-page="shop">Shop All <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="product-grid" id="featuredProducts"></div>
+                </div>
+            </section>
+
+            <!-- Promo -->
+            <section class="promo container">
+                <div>
+                    <span class="eyebrow">SPECIAL COLLECTION</span>
+                    <h2>Quality Choices.<br>Better Everyday Living.</h2>
+                    <p>Find something special for yourself and your home.</p>
+                    <button class="btn btn-gold" data-page="shop">Explore Products <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900" alt="Lifestyle collection">
+            </section>
+
+            <!-- Best Sellers -->
+            <section class="section container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">CUSTOMER FAVORITES</span>
+                        <h2>Best Selling Products</h2>
+                    </div>
+                    <button class="text-link" data-page="shop">View All <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="product-grid" id="bestProducts"></div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter">
+                <div class="container newsletter-inner">
+                    <div>
+                        <span class="eyebrow">STAY IN THE LOOP</span>
+                        <h2>Get the Latest Updates</h2>
+                        <p>Subscribe for new arrivals, offers and store updates.</p>
+                    </div>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+        <!-- SHOP PAGE -->
+        <section class="page" id="page-shop">
+            <div class="page-banner">
+                <span class="eyebrow">DISCOVER OUR COLLECTION</span>
+                <h1>Shop All Products</h1>
+                <p>Explore our carefully selected collection.</p>
+            </div>
+
+            <div class="container shop-section">
+                <div class="shop-toolbar">
+                    <div>
+                        <h2 id="shopTitle">All Products</h2>
+                        <p id="resultCount">Browse our collection</p>
+                    </div>
+                    <div class="shop-toolbar-actions">
+                        <button class="btn btn-light filter-toggle" id="filterToggle"><i class="fa-solid fa-filter"></i> Filters</button>
+                        <select id="sortSelect" aria-label="Sort products">
+                            <option value="default">Featured</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shop-layout">
+                    <aside class="filter-sidebar" id="filterSidebar">
+                        <div class="filter-title">
+                            <h3>Filters</h3>
+                            <button id="clearFilters">Clear All</button>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Categories</h4>
+                            <div id="categoryFilters"></div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Price Range (৳)</h4>
+                            <div class="price-inputs">
+                                <input type="number" id="minPrice" placeholder="Min">
+                                <input type="number" id="maxPrice" placeholder="Max">
+                            </div>
+                            <button class="btn btn-dark full-btn" id="applyPrice">Apply Price</button>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Availability</h4>
+                            <label class="check-label"><input type="checkbox" id="stockFilter"> In Stock</label>
+                        </div>
+                    </aside>
+
+                    <div class="shop-results">
+                        <div class="active-filters" id="activeFilters"></div>
+                        <div class="product-grid" id="shopProducts"></div>
+                        <div class="empty-state hidden" id="emptyProducts">
+                            <i class="fa-solid fa-box-open"></i>
+                            <h3>No Products Found</h3>
+                            <p>Try changing your search or filters.</p>
+                            <button class="btn btn-dark" id="resetShop">Reset Filters</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT DETAILS -->
+        <section class="page" id="page-product">
+            <div class="container detail-container" id="productDetails"></div>
+        </section>
+
+        <!-- CART -->
+        <section class="page" id="page-cart">
+            <div class="page-banner">
+                <span class="eyebrow">YOUR SHOPPING BAG</span>
+                <h1>Shopping Cart</h1>
+                <p>Review your selected products.</p>
+            </div>
+            <div class="container cart-layout">
+                <div id="cartItems"></div>
+                <aside class="summary-card" id="cartSummary"></aside>
+            </div>
+        </section>
+
+        <!-- WISHLIST -->
+        <section class="page" id="page-wishlist">
+            <div class="page-banner">
+                <span class="eyebrow">YOUR FAVORITES</span>
+                <h1>My Wishlist</h1>
+                <p>Your saved products in one place.</p>
+            </div>
+            <div class="container section">
+                <div class="product-grid" id="wishlistProducts"></div>
+                <div class="empty-state hidden" id="emptyWishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <h3>Your Wishlist is Empty</h3>
+                    <p>Save products you love and find them here.</p>
+                    <button class="btn btn-dark" data-page="shop">Explore Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKOUT -->
+        <section class="page" id="page-checkout">
+            <div class="page-banner">
+                <span class="eyebrow">ALMOST THERE</span>
+                <h1>Checkout</h1>
+                <p>Enter your details to place your demo order.</p>
+            </div>
+            <div class="container checkout-layout">
+                <form id="checkoutForm" class="checkout-form">
+                    <h2>Delivery Information</h2>
+                    <div class="form-grid">
+                        <label>Full Name<input type="text" name="name" required></label>
+                        <label>Phone Number<input type="tel" name="phone" required></label>
+                        <label class="full-field">Email Address<input type="email" name="email" required></label>
+                        <label class="full-field">Full Address<textarea name="address" rows="3" required></textarea></label>
+                        <label>City<input type="text" name="city" required></label>
+                        <label>Postal Code<input type="text" name="postal" required></label>
+                    </div>
+
+                    <h2>Payment Method</h2>
+                    <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked> Cash on Delivery</label>
+                    <label class="payment-option"><input type="radio" name="payment" value="Online Payment"> Online Payment (Demo Only)</label>
+
+                    <button class="btn btn-dark full-btn" type="submit">Place Order <i class="fa-solid fa-arrow-right"></i></button>
+                    <p class="demo-note">Demo checkout only. No real payment will be collected.</p>
+                </form>
+                <aside class="summary-card" id="checkoutSummary"></aside>
+            </div>
+        </section>
+
+        <!-- LOGIN -->
+        <section class="page" id="page-login">
+            <div class="auth-wrapper">
+                <form class="auth-card" id="loginForm">
+                    <span class="eyebrow">WELCOME BACK</span>
+                    <h1>Sign In</h1>
+                    <p>Access your MEHEDI STORE account.</p>
+                    <label>Email Address<input type="email" name="email" required></label>
+                    <label>Password<input type="password" name="password" required minlength="6"></label>
+                    <button type="submit" class="btn btn-dark full-btn">Sign In</button>
+                    <p class="auth-switch">Don't have an account? <button type="button" data-page="register">Create Account</button></p>
+                    <p class="demo-note">Demo login only. Do not use a real password.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- REGISTER -->
+        <section class="page" id="page-register">
+            <div class="auth-wrapper">
+                <form class="auth-card" id="registerForm">
+                    <span class="eyebrow">JOIN OUR COMMUNITY</span>
+                    <h1>Create Account</h1>
+                    <p>Start your shopping journey with us.</p>
+                    <label>Full Name<input type="text" name="name" required></label>
+                    <label>Email Address<input type="email" name="email" required></label>
+                    <label>Password<input type="password" name="password" required minlength="6"></label>
+                    <button type="submit" class="btn btn-dark full-btn">Create Account</button>
+                    <p class="auth-switch">Already registered? <button type="button" data-page="login">Sign In</button></p>
+                    <p class="demo-note">Demo registration only. Account data is stored locally in this browser.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- ACCOUNT -->
+        <section class="page" id="page-account">
+            <div class="page-banner">
+                <span class="eyebrow">YOUR PROFILE</span>
+                <h1>My Account</h1>
+                <p>Manage your demo account.</p>
+            </div>
+            <div class="container account-content" id="accountContent"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="page" id="page-about">
+            <div class="page-banner">
+                <span class="eyebrow">OUR STORY</span>
+                <h1>About MEHEDI STORE</h1>
+                <p>Quality, convenience and a better shopping experience.</p>
+            </div>
+            <div class="container about-content">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1000" alt="Our store">
+                <div>
+                    <span class="eyebrow">WHO WE ARE</span>
+                    <h2>Shopping Made Simple.</h2>
+                    <p>MEHEDI STORE is a multi-category online shopping concept designed to bring a variety of everyday products together in one convenient place.</p>
+                    <p>Our goal is to offer a simple shopping experience, an attractive product collection and helpful customer service.</p>
+                    <button class="btn btn-dark" data-page="shop">Explore Our Store</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="page" id="page-contact">
+            <div class="page-banner">
+                <span class="eyebrow">WE'RE HERE TO HELP</span>
+                <h1>Contact Us</h1>
+                <p>Have a question? Send us a message.</p>
+            </div>
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We would love to hear from you.</p>
+                    <p><i class="fa-solid fa-envelope"></i> support@mehedistore.example</p>
+                    <p><i class="fa-solid fa-phone"></i> +880 1XXXXXXXXX</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Bangladesh</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <label>Your Name<input type="text" name="name" required></label>
+                    <label>Email Address<input type="email" name="email" required></label>
+                    <label>Subject<input type="text" name="subject" required></label>
+                    <label>Message<textarea name="message" rows="5" required></textarea></label>
+                    <button type="submit" class="btn btn-dark">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ORDER SUCCESS -->
+        <section class="page" id="page-success">
+            <div class="success-content">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="eyebrow">ORDER CONFIRMED</span>
+                <h1>Thank You!</h1>
+                <p id="successMessage">Your demo order has been placed.</p>
+                <button class="btn btn-dark" data-page="shop">Continue Shopping</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo" data-page="home">MEHEDI<span>STORE.</span></a>
+                <p>Your destination for quality products and a better everyday shopping experience.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <button data-page="home">Home</button>
+                <button data-page="shop">Shop</button>
+                <button data-page="about">About Us</button>
+                <button data-page="contact">Contact</button>
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <button data-page="account">My Account</button>
+            </div>
+            <div>
+                <h4>Shopping</h4>
+                <button data-page="cart">Shopping Cart</button>
+                <button data-page="wishlist">Wishlist</button>
+                <button data-page="shop">All Products</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 MEHEDI STORE. All Rights Reserved.</p>
+                <p>Designed with care.</p>
+            </div>
+        </div>
+        
+<!-- ======================================
+     ADMIN DASHBOARD
+====================================== -->
+
+<section class="page" id="page-admin">
+
+    <div class="admin-login-wrapper" id="adminLoginSection">
+
+        <form class="admin-login-card" id="adminLoginForm">
+
+            <span class="eyebrow">MEHEDI STORE ADMIN</span>
+
+            <h1>Admin Login</h1>
+
+            <p>Sign in to manage your online store.</p>
+
+            <label>
+                Admin Email
+                <input type="email" name="email"
+                       placeholder="admin@example.com" required>
+            </label>
+
+            <label>
+                Password
+                <input type="password" name="password"
+                       placeholder="Enter your password" required>
+            </label>
+
+            <button class="btn btn-dark full-btn" type="submit">
+                Login to Dashboard
+            </button>
+
+            <p class="admin-error" id="adminLoginError"></p>
+
+        </form>
+
+    </div>
+
+
+    <div class="admin-layout hidden" id="adminDashboard">
+
+        <!-- SIDEBAR -->
+
+        <aside class="admin-sidebar">
+
+            <div class="admin-brand">
+                MEHEDI<span>STORE.</span>
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <button class="admin-menu active" data-admin-tab="overview">
+                <i class="fa-solid fa-chart-pie"></i> Overview
+            </button>
+
+            <button class="admin-menu" data-admin-tab="products">
+                <i class="fa-solid fa-box"></i> Products
+            </button>
+
+            <button class="admin-menu" data-admin-tab="orders">
+                <i class="fa-solid fa-cart-shopping"></i> Orders
+            </button>
+
+            <button class="admin-menu" data-admin-tab="customers">
+                <i class="fa-solid fa-users"></i> Customers
+            </button>
+
+            <button class="admin-menu" id="adminLogout">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </button>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="admin-main">
+
+            <div class="admin-topbar">
+
+                <div>
+                    <span class="eyebrow">STORE MANAGEMENT</span>
+                    <h1>Admin Dashboard</h1>
+                </div>
+
+                <div class="admin-user">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span id="adminName">Administrator</span>
+                </div>
+
+            </div>
+
+
+            <!-- OVERVIEW TAB -->
+
+            <section class="admin-tab active" id="admin-overview">
+
+                <div class="admin-stats">
+
+                    <div class="admin-stat-card">
+                        <i class="fa-solid fa-box"></i>
+                        <p>Total Products</p>
+                        <h2 id="statProducts">0</h2>
+                    </div>
+
+                    <div class="admin-stat-card">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Total Orders</p>
+                        <h2 id="statOrders">0</h2>
+                    </div>
+
+                    <div class="admin-stat-card">
+                        <i class="fa-solid fa-users"></i>
+                        <p>Total Customers</p>
+                        <h2 id="statCustomers">0</h2>
+                    </div>
+
+                    <div class="admin-stat-card">
+                        <i class="fa-solid fa-wallet"></i>
+                        <p>Total Revenue</p>
+                        <h2 id="statRevenue">৳0</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-panel-card">
+
+                    <h2>Recent Orders</h2>
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentOrdersTable"></tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRODUCTS TAB -->
+
+            <section class="admin-tab" id="admin-products">
+
+                <div class="admin-section-heading">
+                    <div>
+                        <h2>Manage Products</h2>
+                        <p>Add, edit and remove store products.</p>
+                    </div>
+
+                    <button class="btn btn-dark" id="showProductForm">
+                        <i class="fa-solid fa-plus"></i> Add Product
+                    </button>
+                </div>
+
+
+                <form class="admin-product-form hidden"
+                      id="adminProductForm">
+
+                    <h3 id="productFormTitle">Add New Product</h3>
+
+                    <input type="hidden" name="productId">
+
+                    <div class="form-grid">
+
+                        <label>
+                            Product Name
+                            <input name="name" required
+                                   placeholder="Product name">
+                        </label>
+
+                        <label>
+                            Category
+                            <select name="category" required>
+                                <option value="">Select Category</option>
+                                <option>Fashion</option>
+                                <option>Electronics</option>
+                                <option>Beauty</option>
+                                <option>Home</option>
+                                <option>Accessories</option>
+                                <option>Sports</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Price (BDT)
+                            <input type="number" name="price"
+                                   min="0" step="0.01" required>
+                        </label>
+
+                        <label>
+                            Previous Price (BDT)
+                            <input type="number" name="oldPrice"
+                                   min="0" step="0.01">
+                        </label>
+
+                        <label>
+                            Stock Quantity
+                            <input type="number" name="stock"
+                                   min="0" required>
+                        </label>
+
+                        <label>
+                            Product Image URL
+                            <input type="url" name="image"
+                                   placeholder="https://example.com/image.jpg"
+                                   required>
+                        </label>
+
+                        <label class="full-field">
+                            Product Description
+                            <textarea name="description"
+                                      rows="3"
+                                      placeholder="Product details"></textarea>
+                        </label>
+
+                    </div>
+
+                    <div class="admin-form-actions">
+
+                        <button class="btn btn-dark" type="submit">
+                            Save Product
+                        </button>
+
+                        <button class="btn btn-light" type="button"
+                                id="cancelProductForm">
+                            Cancel
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="adminProductsTable"></tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ORDERS TAB -->
+
+            <section class="admin-tab" id="admin-orders">
+
+                <div class="admin-section-heading">
+                    <div>
+                        <h2>Manage Orders</h2>
+                        <p>View customer orders and update their status.</p>
+                    </div>
+                </div>
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Phone</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Update</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="adminOrdersTable"></tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CUSTOMERS TAB -->
+
+            <section class="admin-tab" id="admin-customers">
+
+                <div class="admin-section-heading">
+                    <div>
+                        <h2>Customers</h2>
+                        <p>Registered customer accounts.</p>
+                    </div>
+                </div>
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrap">
+                        <table class="admin-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Registration Date</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="adminCustomersTable"></tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</section>
+
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<script src="script.js"></script>    
+
+</script>
+</body>
+</html>
